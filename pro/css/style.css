@@ -1,0 +1,526 @@
+/*--main--*/
+body::before{
+    content: '';
+    display: block;
+    height: 60px;
+} 
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+/* Full-width input fields */
+/* strat login */
+
+.modal_login input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .modal_login button {
+    background-color: #04AA6D;
+    color: white;
+    /* padding: 14px 20px;
+    margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    padding: 7px;
+  }
+  .modal_login .btnone {
+    margin-top: 10px;
+  }
+  
+  .modal_login button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .modal_login .cancelbtn {
+      position: absolute;
+    width: auto;
+    padding: 10px 18px;
+    left: 25px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .modal_login .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  .modal_login img.avatar {
+    width: 40%;
+  }
+  .containerfrom {
+    padding: 16px;
+  }
+  .modal_login  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal_login  {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 100%; /* Full height */
+    overflow:hidden; /* Enable scroll if needed */
+    /*background-color: rgb(0,0,0);*/ /* Fallback color 
+    background-color: rgba(0,0,0,0.4);*/ /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal_login  .modal-content {
+    background-color: #005c22;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .modal_login .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .modal_login .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 768px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+        
+       width: 100%;
+    }
+  
+  }
+
+
+
+/* End login */
+
+
+ /*-- Strat navbar--*/
+ .navbar-nav  {
+    margin-right: auto;
+
+}
+ 
+ .nav-item .active{
+    font-family: Tahoma,Arial;
+    font-weight: 200px;
+    background-color: #D6CD5E;
+    border: 3px solid #D6CD5E;
+    border-radius: 20px;
+    padding:10px ;
+}
+
+
+.navbar-nav .nav-item .nav-link:hover{
+    font-family: Tahoma,Arial;
+    font-weight: 200px;
+    background-color: #D6CD5E;
+    border: 3px solid #D6CD5E;
+    border-radius: 20px;
+    padding:10px ;
+    
+} 
+
+/*-- End navbar--*/
+ 
+
+
+/*-- Strat Header--*/
+.header .carousel .carousel-control-prev .carousel-control-prev-icon,.header .carousel .carousel-control-next .carousel-control-next-icon{
+
+    background-color: #D6CD5E;
+
+}
+.animate-char {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #D6CD5E 100%
+
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color:#fff;
+    background-clip:text;
+   -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    animation: slidein 2s;
+    font-size: xx-large;
+    /* font-size :190px; */
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+
+.animate-char1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        225deg,
+        #231557 0%,
+        #fff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color:#fff;
+    background-clip:text;
+   -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    animation: textclip 2s linear infinite;
+    animation: showup 2s ;
+    font-size: x-large;
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+
+
+/*--End Header--*/
+
+/*--Strat Services--*/
+h2.text-center.md-4::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -165px;
+    width: 120px;
+}
+h2.text-center.md-4::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -171px;
+    background-color: white;
+  }
+.card:hover{
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px,10px,0);
+    transform: translate3d(10px,10px,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: -2px 2px 10px #D6CD5E ;
+}
+
+/*--End Services--*/
+
+/* --strat product -- */
+.card-title:hover {
+    /* margin: -10px 0 0 -10px; */
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(1px,1px,0);
+    transform: translate3d(1px,1px,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-shadow: 1px 1px 1px #D6CD5E ;
+}
+.card-footer {
+    background-color: #D6CD5E;
+}
+
+/* --strat product -- */
+
+/* Start Video */
+.video {
+    position: relative;
+  }
+  .video::before {
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+  }
+  .video video {
+    width: 100%;
+  }
+  .video .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    background-color: rgb(15 116 143 / 70%);
+    height: 200px;
+    color: white;
+    text-align: center;
+    text-justify: auto;
+  }
+  .video .text h2 {
+    flex-wrap: wrap;
+    text-justify: auto;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .video .text p {
+    margin-bottom: 3px;
+  }
+  .video .text button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+  }
+  /* End Video */
+.accordion{
+    margin-top: 10px;
+}
+/* strat landing */
+.landing {
+  min-height: 100vh;
+  background-color: #1f2021;
+  background-size: cover;
+  position: relative;
+}
+.landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 60%);
+}
+.landing .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 50px;
+  background-color: rgb(15 116 143 / 70%);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+.landing .text .content {
+  max-width: 500px;
+}
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+  .landing .text .content {
+    max-width: 100%;
+  }
+}
+.landing .text .content h2 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.landing .text .content p {
+  font-size: 14px;
+  line-height: 2;
+}
+.landing .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+}
+@media (max-width: 767px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+.landing .fa-angle-left {
+  left: 30px;
+}
+.landing .fa-angle-right {
+  right: 30px;
+}
+.landing .bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+}
+.landing .bullets li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* End Landing */
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.rowp {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.rowp,
+.rowp > .column {
+padding: 8px;
+/* display: grid;
+grid-template-columns: auto auto auto;
+gap: 10px;
+width: 100%;
+margin: 0; */
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.rowp:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color:#D6CD5E;
+}
+
+.btn.active {
+  background-color: #D6CD5E;
+}
+
+
+
+/* media mobile */ 
+@media(max-width:767px) {
+  .rowp, .rowp > .column{ 
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide all elements by default */
+  }
+  .rowp:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+} 

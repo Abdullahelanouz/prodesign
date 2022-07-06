@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Krish",
+      "lastName": "Lee",
+      "phoneNumber": "123456",
+      "emailAddress": "krish.lee@learningcontainer.com"
+    },
+    {
+      "id": 2,
+      "firstName": "racks",
+      "lastName": "jacson",
+      "phoneNumber": "123456",
+      "emailAddress": "racks.jacson@learningcontainer.com"
+    },
+    {
+      "id": 3,
+      "firstName": "denial",
+      "lastName": "roast",
+      "phoneNumber": "33333333",
+      "emailAddress": "denial.roast@learningcontainer.com"
+    },
+    {
+      "id": 4,
+      "firstName": "devid",
+      "lastName": "neo",
+      "phoneNumber": "222222222",
+      "emailAddress": "devid.neo@learningcontainer.com"
+    },
+    {
+      "fname": "abdlla",
+      "lname": "ebrhim",
+      "username": {},
+      "email": "admin1@admin.com",
+      "id": 5
+    },
+    {
+      "firstName": "abdalla",
+      "lastName": "ebrhim",
+      "phoneNumber": {},
+      "emailAddress": "admin1@admin.com",
+      "id": 6
+    },
+    {
+      "firstName": "devid",
+      "lastName": "neo",
+      "phoneNumber": "222222222",
+      "emailAddress": "devid.neo@learningcontainer.com",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
